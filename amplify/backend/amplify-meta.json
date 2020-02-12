@@ -1,0 +1,53 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplifypoc-dev-20190701145057-authRole",
+			"UnauthRoleArn": "arn:aws:iam::460536000517:role/amplifypoc-dev-20190701145057-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::460536000517:role/amplifypoc-dev-20190701145057-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "amplifypoc-dev-20190701145057-deployment",
+			"UnauthRoleName": "amplifypoc-dev-20190701145057-unauthRole",
+			"StackName": "amplifypoc-dev-20190701145057",
+			"StackId": "arn:aws:cloudformation:eu-west-1:460536000517:stack/amplifypoc-dev-20190701145057/40ad3cb0-9c07-11e9-adb7-02135cc8443e"
+		}
+	},
+	"api": {
+		"amplifypoc": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "udk5uq4bajgdpb2y6jmejul5pe",
+				"GraphQLAPIEndpointOutput": "https://4vlp4an5off45d7jgozuo6wix4.appsync-api.eu-west-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-dgjql7u4szadvdc3ivyj3ewgwy"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifypoc-dev-20190701145057-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiamplifypoc"
+			},
+			"lastPushTimeStamp": "2019-07-01T15:54:32.256Z",
+			"lastPushDirHash": "W71jaNvPsZpvtagT7TzxRjIiMto="
+		}
+	},
+	"auth": {
+		"amplifypoc97279692": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifypoc-dev-20190701145057-deployment/amplify-cfn-templates/auth/amplifypoc97279692-cloudformation-template.yml",
+				"logicalId": "authamplifypoc97279692"
+			},
+			"lastPushTimeStamp": "2019-07-01T15:54:32.260Z",
+			"output": {
+				"AppClientSecret": "18likkrer5s5fcq4hjppimjuj8b3oc82ac3eqjt135rq3rjur4mb",
+				"UserPoolId": "eu-west-1_DaOV4h6Rm",
+				"AppClientIDWeb": "7m4nb7q3pk78icvnmlu27vj9fk",
+				"AppClientID": "3iat75ca4hovjncqunqn3euqcd",
+				"IdentityPoolId": "eu-west-1:0009c77d-ce34-4a77-8bcb-0d3baf9f50f3",
+				"IdentityPoolName": "amplifypoc97279692_identitypool_97279692__dev",
+				"UserPoolName": "amplifypoc97279692_userpool_97279692"
+			},
+			"lastPushDirHash": "YMHjSZjgrN3qRnjvoSan7KZhCrM="
+		}
+	}
+}
